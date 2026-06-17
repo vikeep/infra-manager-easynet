@@ -21,7 +21,7 @@ variable "cloudcontrolapi_endpoint" {
 variable "vpc_name" {
   description = "Name of the VPC"
   type        = string
-  default     = "vpc-demo-update"
+  default     = "vpc-demo"
 }
 
 variable "vpc_description" {
@@ -39,7 +39,7 @@ variable "vpc_cidr_block" {
 variable "subnet_name" {
   description = "Name of the subnet"
   type        = string
-  default     = "subnet-demo-12"
+  default     = "subnet-demo"
 }
 
 variable "subnet_description" {
