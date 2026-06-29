@@ -46,6 +46,18 @@ variable "subnet_zone_id" {
   default     = "cn-beijing-a"
 }
 
+variable "subnet2_name" {
+  description = "Name of the second subnet"
+  type        = string
+  default     = "subnet-demo-2"
+}
+
+variable "subnet2_cidr_block" {
+  description = "CIDR block of the second subnet"
+  type        = string
+  default     = "192.168.2.0/24"
+}
+
 variable "tags" {
   description = "Tags applied to the VPC and subnet"
   type = list(object({

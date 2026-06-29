@@ -62,3 +62,18 @@ output "subnet_available_ip_count" {
   description = "Number of available IP addresses in the subnet"
   value       = volcenginecc_vpc_subnet.subnet-demo.available_ip_address_count
 }
+
+output "subnet2_id" {
+  description = "ID of the second subnet"
+  value       = volcenginecc_vpc_subnet.subnet-demo-2.id
+}
+
+output "subnet2_name" {
+  description = "Name of the second subnet"
+  value       = volcenginecc_vpc_subnet.subnet-demo-2.subnet_name
+}
+
+output "subnet2_cidr_block" {
+  description = "CIDR block of the second subnet"
+  value       = volcenginecc_vpc_subnet.subnet-demo-2.cidr_block
+}

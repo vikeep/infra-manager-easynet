@@ -15,3 +15,13 @@ resource "volcenginecc_vpc_subnet" "subnet-demo" {
 
   tags = var.tags
 }
+
+resource "volcenginecc_vpc_subnet" "subnet-demo-2" {
+  vpc_id      = volcenginecc_vpc_vpc.vpc-demo.id
+  zone_id     = var.subnet_zone_id
+  subnet_name = var.subnet2_name
+  description = var.subnet_description
+  cidr_block  = var.subnet2_cidr_block
+
+  tags = var.tags
+}
