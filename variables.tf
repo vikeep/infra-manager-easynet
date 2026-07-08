@@ -37,7 +37,7 @@ variable "subnet_description" {
 variable "subnet_cidr_block" {
   description = "CIDR block of the subnet"
   type        = string
-  default     = "192.168.1.0/24"
+  default     = "192.168.5.0/24"
 }
 
 variable "subnet_zone_id" {
@@ -55,7 +55,7 @@ variable "subnet2_name" {
 variable "subnet2_cidr_block" {
   description = "CIDR block of the second subnet"
   type        = string
-  default     = "192.168.2.0/24"
+  default     = "192.168.6.0/24"
 }
 
 variable "tags" {
