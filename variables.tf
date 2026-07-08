@@ -13,7 +13,7 @@ variable "vpc_name" {
 variable "vpc_description" {
   description = "Description of the VPC"
   type        = string
-  default     = "VPC created by Terraform"
+  default     = "VPC created by Terraform - Update"
 }
 
 variable "vpc_cidr_block" {
